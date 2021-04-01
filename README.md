@@ -6,7 +6,7 @@
 
 编译器在编译的代码的第一个阶段会将js代码词法化，词法作用域就是在`词法化阶段`形成的作用域。通俗一点的说，就是函数在`声明的时候`形成的一个作用域
 
-![area](https://github.com/wangx1229/Closure/imgs/area.png)
+![area](https://github.com/wangx1229/Closure/blob/main/imgs/area.png)
 
 从上图可以看到 全局作用域包含标识符count和main，main的作用域包含内部标识符count和bar，bar作用域又包含count和foo，最后foo标识符包含count。
 
