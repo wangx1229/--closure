@@ -195,3 +195,7 @@ ES6 模块的设计思想是尽量的静态化，使得编译时就能确定模�
 闭包会阻止垃圾回收，造成内存泄漏
 
 ## 内存泄漏
+
+![area](https://github.com/wangx1229/Closure/blob/main/imgs/gc.png)
+
+![area](https://github.com/wangx1229/Closure/blob/main/imgs/mark.png)
