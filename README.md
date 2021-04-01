@@ -92,6 +92,19 @@ foo 函数作用域—>bar 函数作用域—>main 函数作用域—> 全局作
     }
 
 我们知道`useState`函数会返回当前的`state`以及修改`state`的方法`setState`。`setState`修改`state` 函数组件重新渲染，`useState`执行，我们的`state`每次只能拿到`init`值，这明显不是我们所期望的。
+    
+    function useState(init) {
+      const state = init
+
+      function setState(newValue) {
+        state = newValue
+        // 执行渲染函数
+      }
+
+      index++
+      return [states, setState]
+    }
+
 
     states = []
     index = 0
